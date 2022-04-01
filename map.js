@@ -17,31 +17,23 @@
 
 // Configuracion del Marcador
 var marcador_rojo = L.icon({
-    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
-    iconSize: [20, 33], // size of the icon
+    iconUrl: "./img/red_c_marker.png",
+    iconSize: [25, 25], // size of the icon
     //shadowSize: [50, 64], // size of the shadow
     //iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
     //shadowAnchor: [4, 62], // the same for the shadow
     //popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
-var marcador_Amarillo = L.icon({
-    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png",
-    iconSize: [20, 33], // size of the icon
+var marcador_azul = L.icon({
+    iconUrl: "./img/blue_c_marker.png",
+    iconSize: [25, 25], // size of the icon
     //shadowSize: [50, 64], // size of the shadow
     //iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
     //shadowAnchor: [4, 62], // the same for the shadow
     //popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
-var marcador_Verde = L.icon({
-    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png",
-    iconSize: [22, 33], // size of the icon
-    //shadowSize: [50, 64], // size of the shadow
-    //iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
-    //shadowAnchor: [4, 62], // the same for the shadow
-    //popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
 
 
 
@@ -60,61 +52,59 @@ var Ichocollo = L.marker([-15.66680, -70.82266], {
         icon: marcador_rojo,
         draggable: false,
         title: "Río Ichocollo",
-    }).bindPopup("Datos en Construcción", {
-        maxWidth: "auto"
-    }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/532ddce7-2923-4c65-a12b-8f95c4088471/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     garganta_larga = L.marker([-15.72068, -70.70347], {
         icon: marcador_rojo,
         draggable: false,
         title: "Aforador Garganta Larga",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/a576f07e-f55c-41d2-8161-83497f5c1e6d/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     boca_cabana_mañazo = L.marker([-15.65959, -70.46939], {
         icon: marcador_rojo,
         draggable: false,
         title: "Bocatoma Cabana - Mañazo",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/be0b3fe5-cfed-4f9d-9632-46668e0ab318/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     boca_huataquita = L.marker([-15.65734, -70.46796], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
         title: "Bocatoma Huataquita",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/5d9cb5f6-5a8a-457d-88ae-5dd450d0bd58/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     captacion_huataquita = L.marker([-15.67904, -70.40971], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
         title: "Captación Huataquita - Callapoca",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/79029ba9-6be8-41a9-8e2b-d00f79809adb/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     bocatoma_cabanilla = L.marker([-15.67103, -70.38460], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
         title: "Bocatoma Cabanilla",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/819988fc-fbd0-4f4b-9aff-0f4e19cc49c4/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     canal_cabana = L.marker([-15.70628, -70.35953], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
         title: "Canal Principal Cabana",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/737ed00c-5b58-42a9-8444-cbbafe8102f8/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     canal_mañazo = L.marker([-15.70673, -70.35971], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
         title: "Canal Principal Mañazo",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/d21cf873-79d6-457c-8ba4-c7576a0e5a9c/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     bocatoma_yanarico = L.marker([-15.62643, -70.33333], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
         title: "Bocatoma Yanarico",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/863d79c1-b609-48aa-9c7f-11bc94147cf0/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     bocatoma_yocara = L.marker([-15.59562, -70.29974], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
-        title: "Bocatoma Yocara",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+        title: "Bocatoma Yocará",
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/ab16556c-6c20-4002-90a7-d99c047374b0/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     bocatoma_canteria = L.marker([-15.55887, -70.26945], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
         title: "Bocatoma Canteria",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" }),
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/3fbba1ab-9326-40e8-a348-3e7c3af06de0/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     captacion_sedaj = L.marker([-15.46719, -70.10607], {
-        icon: marcador_Verde,
+        icon: marcador_azul,
         draggable: false,
         title: "Captación Seda Juliaca",
     }).bindPopup("Datos en Construcción", { maxWidth: "auto" })
@@ -137,7 +127,7 @@ var Distribución = L.layerGroup([boca_huataquita, captacion_huataquita, bocatom
 //Agregando los grupos de Capas al Mapa
 var map = L.map('map', {
     center: [-15.67758, -70.39955],
-    zoom: 10,
+    zoom: 11,
     layers: [OpenStreetMap_Mapnik, Captacion, Distribución]
 });
 
@@ -152,9 +142,9 @@ var baseMaps = {
 
 // Creando Capas de Marcadores
 var Capas = {
-    '<img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png" width="10" height="15"/> Red de Captación': Captacion,
+    '<img src="./img/red_c_marker.png" width="15" height="15"/> Red de Captación': Captacion,
     //'<img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png" width="10" height="15"/> Estudios': Estudio,
-    '<img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png" width="10" height="15"/> Red de Distribución': Distribución,
+    '<img src="./img/blue_c_marker.png" width="15" height="15"/> Red de Distribución': Distribución,
 };
 
 
