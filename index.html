@@ -10,11 +10,91 @@
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <link rel="stylesheet" type="text/css" href="map.css">
+    <style>
+        #boton {
+            position: absolute;
+            left: 100px;
+            top: 10px;
+            z-index: 600
+        }
+    </style>
 
 </head>
 
 <body>
     <div id="map"></div>
+    <div id="boton">
+        <button id="richo">Río Ichocollo</button>
+        <button id="agarganta">Aforador Garganta Larga</button>
+        <button id="bcm">Bocatoma Cabana - Mañazo</button>
+        <button id="bhuat">Bocatoma Huataquita</button>
+        <button id="chuat">Captación Huataquita</button>
+        <button id="bcab">Bocatoma Cabanilla</button>
+        <button id="cncab">Canal Cabana</button>
+        <button id="cnma">Canal Mañazo</button>
+        <button id="byan">Bocatoma Yanarico</button>
+        <button id="byoc">Bocatoma Yocará</button>
+        <button id="bcant">Bocatoma Canteria</button>
+        <button id="csj">Captación Seda Juliaca</button>
+        <button id="stop">stop</button>
+    </div>
+
+    <script type="text/javascript">
+        var richo = [-15.66680, -70.82266];
+        agarganta = [-15.72068, -70.70347];
+        bcm = [-15.65959, -70.46939];
+        bhuat = [-15.65734, -70.46796];
+        chuat = [-15.67904, -70.40971];
+        bcab = [-15.67103, -70.38460];
+        cncab = [-15.70628, -70.35953];
+        cnma = [-15.70673, -70.35971];
+        byan = [-15.62643, -70.33333];
+        byoc = [-15.59562, -70.29974];
+        bcant = [-15.55887, -70.26945];
+        csj = [-15.46719, -70.10607];
+
+
+        document.getElementById('richo').onclick = function() {
+            map.flyTo(richo, 18);
+        };
+        document.getElementById('agarganta').onclick = function() {
+            map.flyTo(agarganta, 18);
+        };
+        document.getElementById('bcm').onclick = function() {
+            map.flyTo(bcm, 18);
+        };
+        document.getElementById('bhuat').onclick = function() {
+            map.flyTo(bhuat, 18);
+        };
+        document.getElementById('chuat').onclick = function() {
+            map.flyTo(chuat, 18);
+        };
+        document.getElementById('bcab').onclick = function() {
+            map.flyTo(bcab, 18);
+        };
+        document.getElementById('cncab').onclick = function() {
+            map.flyTo(cncab, 18);
+        };
+        document.getElementById('cnma').onclick = function() {
+            map.flyTo(cnma, 18);
+        };
+        document.getElementById('byan').onclick = function() {
+            map.flyTo(byan, 18);
+        };
+        document.getElementById('byoc').onclick = function() {
+            map.flyTo(byoc, 18);
+        };
+        document.getElementById('bcant').onclick = function() {
+            map.flyTo(bcant, 18);
+        };
+        document.getElementById('csj').onclick = function() {
+            map.flyTo(csj, 18);
+        };
+        document.getElementById('stop').onclick = function() {
+            map.stop();
+        };
+    </script>
+
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 

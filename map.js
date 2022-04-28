@@ -36,8 +36,6 @@ var marcador_azul = L.icon({
 
 
 
-
-
 // Varios Mapas Base 
 var Google = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', { foo: 'bar', attribution: '&copy; <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>' }),
     OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }),
@@ -149,7 +147,10 @@ var Capas = {
 
 
 // Creando Control de Capas
-L.control.layers(baseMaps, Capas).addTo(map);
+L.control.layers(baseMaps, Capas, {
+    position: 'bottomleft',
+    collapsed: false
+}).addTo(map);
 
 
 // Color GRis 
