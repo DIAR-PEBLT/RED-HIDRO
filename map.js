@@ -18,7 +18,7 @@
 // Configuracion del Marcador
 var marcador_rojo = L.icon({
     iconUrl: "./img/red_c_marker.png",
-    iconSize: [25, 25], // size of the icon
+    iconSize: [20, 20], // size of the icon
     //shadowSize: [50, 64], // size of the shadow
     //iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
     //shadowAnchor: [4, 62], // the same for the shadow
@@ -27,7 +27,7 @@ var marcador_rojo = L.icon({
 
 var marcador_azul = L.icon({
     iconUrl: "./img/blue_c_marker.png",
-    iconSize: [25, 25], // size of the icon
+    iconSize: [20, 20], // size of the icon
     //shadowSize: [50, 64], // size of the shadow
     //iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
     //shadowAnchor: [4, 62], // the same for the shadow
