@@ -119,6 +119,11 @@ var Distribución = L.layerGroup([boca_huataquita, captacion_huataquita, bocatom
     bocatoma_yocara, bocatoma_canteria, captacion_sedaj
 ]);
 
+//Afluentes Ichocollo
+
+
+
+
 // Agrpando los Marcadores de Tipo Idea de Proyecto
 
 //var Idea = L.layerGroup([asillo, acora_totorani, conavire]);
@@ -141,9 +146,9 @@ var map = L.map('map', {
 
 // Agrupando los Mapas Base
 var baseMaps = {
-    "Google": Google,
+    "Google Satellite": Google,
     "OpenStreetMap": OpenStreetMap_Mapnik,
-    "Dark": CartoDB_DarkMatter
+    "Cartografía Oscura": CartoDB_DarkMatter
 };
 
 
