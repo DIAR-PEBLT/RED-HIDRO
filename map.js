@@ -106,7 +106,7 @@ var Ichocollo = L.marker([-15.66680, -70.82266], {
         icon: marcador_azul,
         draggable: false,
         title: "Captación Seda Juliaca",
-    }).bindPopup("Datos en Construcción", { maxWidth: "auto" })
+    }).bindPopup("Sección Construcción", { maxWidth: "auto" })
 
 ;
 
