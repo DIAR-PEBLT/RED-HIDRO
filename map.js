@@ -50,6 +50,7 @@ var Ichocollo = L.marker([-15.66680, -70.82266], {
         icon: marcador_rojo,
         draggable: false,
         title: "Río Ichocollo",
+        attribution: "<a href='https://hugoaluque.github.io/Hector-Hugo-Anamuro-Luque/'target='blank'> HugoAñamuro</a> ",
     }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/532ddce7-2923-4c65-a12b-8f95c4088471/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     garganta_larga = L.marker([-15.72068, -70.70347], {
         icon: marcador_rojo,
@@ -126,8 +127,17 @@ var Distribución = L.layerGroup([boca_huataquita, captacion_huataquita, bocatom
 var map = L.map('map', {
     center: [-15.67758, -70.39955],
     zoom: 11,
+    maxBounds: [
+        //surOeste
+        [-15.847102, -70.026775],
+        //norEste
+        [-15.421305, -70.841130]
+    ],
+
     layers: [OpenStreetMap_Mapnik, Captacion, Distribución]
 });
+
+
 
 // Agrupando los Mapas Base
 var baseMaps = {
