@@ -13,6 +13,11 @@
 //}).addTo(map).bindPopup("<h1>Presa Lagunillas</h1> <p> Reservorio Lagunillas 580 MM3 </p><img src='./img/presa.jpg'/> <a href='https://datastudio.google.com/u/2/reporting/3dc19c28-3194-448d-9bcd-fa0bc7b20a7a/page/qX5SC'target='blank'>Datos Aqui</a> <iframe width='600' height='500' src='https://datastudio.google.com/embed/reporting/8d756330-5145-4e50-a8cf-7db63867695b/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>");
 
 
+// //visualización de coordenadas del mouse
+//L.control.mousePosition().addTo(map);
+
+// //barra de escala
+// L.control.scale().addTo(map);
 
 
 // Configuracion del Marcador
@@ -109,6 +114,7 @@ var Ichocollo = L.marker([-15.66680, -70.82266], {
     }).bindPopup("Sección Construcción", { maxWidth: "auto" })
 
 ;
+
 
 
 //Agrupando los Marcadores de Tipo Proyecto
