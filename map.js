@@ -55,7 +55,7 @@ var Ichocollo = L.marker([-15.66680, -70.82266], {
         icon: marcador_rojo,
         draggable: false,
         title: "Río Ichocollo",
-        attribution: "<a href='https://hugoaluque.github.io/Hector-Hugo-Anamuro-Luque/'target='blank'> HugoAñamuro</a> ",
+        attribution: "<a href='https://hugoaluque.github.io/Hector-Hugo-Anamuro-Luque/'target='blank'> By HugoAñamuro</a> ",
     }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/532ddce7-2923-4c65-a12b-8f95c4088471/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" }),
     garganta_larga = L.marker([-15.72068, -70.70347], {
         icon: marcador_rojo,
