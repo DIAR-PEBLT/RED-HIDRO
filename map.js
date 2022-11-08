@@ -111,7 +111,7 @@ var Ichocollo = L.marker([-15.66680, -70.82266], {
         icon: marcador_azul,
         draggable: false,
         title: "Captación Seda Juliaca",
-    }).bindPopup("Sección Construcción", { maxWidth: "auto" })
+    }).bindPopup("<iframe width='650' height='350' src='https://datastudio.google.com/embed/reporting/30c22d30-ec24-4af1-aef9-de74b721b047/page/qX5SC' frameborder='0' style='border:0' allowfullscreen></iframe>", { maxWidth: "auto" })
 
 ;
 
