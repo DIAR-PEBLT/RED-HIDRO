@@ -173,7 +173,21 @@ L.control.layers(baseMaps, Capas, {
     collapsed: false
 }).addTo(map);
 
+//Adicionando Logo Institucional
 
+L.Control.Watermark=L.Control.extend({
+            onAdd:function(map){
+                var img = L.DomUtil.create('img');
+                img.src = 'img/PEBLT.png';
+                img.style.width = '150px';
+                return img;
+                },
+                onRemove:function(map){},
+                });
+                L.control.watermark = function(opts){
+                    return new L.Control.Watermark(opts);
+                    }
+                L.control.watermark({position:'bottomright'}).addTo(map);
 // Color GRis 
 var baseMaps = {
     "<span style='color: gray'>Grayscale</span>": grayscale,
